@@ -131,8 +131,9 @@ header {
 
 /*Header slut */
 
-/* indmeldelse */
-/* indmeldelse hero */
+
+/* hero styling */
+
 .hero {
   position: relative;
   text-align: center;
@@ -163,7 +164,8 @@ header {
 .intro p{
   font-weight: bold;
 }
-=======
+
+
 /*main styling*/
 section {
   width: 100%;
@@ -171,6 +173,8 @@ section {
 p, h2 {
   width: 80%;
 }
+
+/* indmeldelse */
 
 /* Footer */
 
