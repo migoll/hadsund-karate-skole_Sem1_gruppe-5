@@ -195,3 +195,14 @@ footer section {
 }
 */
 
+/* prakisk information start*/
+
+.kontaktOplysninger li, .bestyrelse li {
+  list-style-type: none; 
+}
+
+.kontaktOplysninger ul, .bestyrelse ul {
+  padding: 0;
+}
+
+/* praktisk information slut*/
