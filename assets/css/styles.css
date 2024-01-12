@@ -131,6 +131,39 @@ header {
 
 /*Header slut */
 
+/* indmeldelse */
+/* indmeldelse hero */
+.hero {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.hero img {
+  width: 100%;
+}
+
+/* intro-tekst */
+
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--mediumSpacing);
+  margin-bottom: var(--largeSpacing);
+}
+.intro p{
+  font-weight: bold;
+}
+=======
 /*main styling*/
 section {
   width: 100%;
@@ -157,3 +190,4 @@ footer section {
   height: 30px;
 }
 */
+
