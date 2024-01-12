@@ -158,8 +158,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: var(--mediumSpacing);
-  margin-bottom: var(--largeSpacing);
 }
 .intro p{
   font-weight: bold;
