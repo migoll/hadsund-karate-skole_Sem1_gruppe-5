@@ -167,9 +167,16 @@ header {
 /*main styling*/
 section {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 p, h2 {
   width: 80%;
+}
+
+section p, section h2 {
+  display: flex;
 }
 
 /*Entry point */
