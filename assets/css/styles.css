@@ -130,3 +130,36 @@ header {
 
 /*Header slut */
 
+/* indmeldelse */
+/* indmeldelse hero */
+.hero {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.hero img {
+  width: 100%;
+}
+
+/* intro-tekst */
+
+body{
+  background-color: var(--beige);
+}
+section.intro{
+  width: 80%;
+}
+section.intro p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
