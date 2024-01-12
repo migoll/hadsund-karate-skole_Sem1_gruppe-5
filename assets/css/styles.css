@@ -187,9 +187,11 @@ footer section {
   padding-block: 10px;
 }
 
-/*footer img {
+footer img {
   width: 30px;
   height: 30px;
 }
-*/
 
+section img{
+  width: 100%;
+}
