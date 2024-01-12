@@ -187,11 +187,15 @@ footer section {
   padding-block: 10px;
 }
 
-/*footer img {
+footer img {
   width: 30px;
   height: 30px;
 }
-*/
+
+
+section img{
+  width: 100%;
+}
 
 /* prakisk information start*/
 
@@ -204,3 +208,4 @@ footer section {
 }
 
 /* praktisk information slut*/
+
