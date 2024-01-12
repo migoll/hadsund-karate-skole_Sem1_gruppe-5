@@ -192,6 +192,20 @@ footer img {
   height: 30px;
 }
 
+
 section img{
   width: 100%;
 }
+
+/* prakisk information start*/
+
+.kontaktOplysninger li, .bestyrelse li {
+  list-style-type: none; 
+}
+
+.kontaktOplysninger ul, .bestyrelse ul {
+  padding: 0;
+}
+
+/* praktisk information slut*/
+
