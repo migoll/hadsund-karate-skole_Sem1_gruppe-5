@@ -257,4 +257,15 @@ section img{
 
 /* praktisk information slut*/
 
+/* Nyheder start */
 
+.nyheder-box{
+  border:  solid white;
+  border-radius: 10px;
+  box-shadow: 3px 3px lightgrey;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  
+}
+/* Nyheder slut */
