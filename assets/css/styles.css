@@ -407,6 +407,18 @@ button img {
   background-color: white;
   
 }
+.text-line{
+  padding-bottom: 10px;
+}
+
+/* Nyheder media queries */
+@media screen and (min-width:768px){
+  .filtrer-button{
+    position: relative;
+    left: 17.5rem;
+  }
+}
+
 /* Nyheder slut */
 
 /* Om Ashihara start */
