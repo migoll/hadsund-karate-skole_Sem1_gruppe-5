@@ -399,6 +399,25 @@ button img {
 }
 /* Nyheder slut */
 
+/* Om Ashihara start */
+.text-linje{
+  padding-bottom: 10px;
+}
+
+/* Om ashihara media queries */
+@media screen and (min-width:768px) {
+  .grid-template-omashihara{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+
+/* Om Ashihara Slut */
+
+
+
 /* træning */
 .traeningstider-list {
   display: flex;
