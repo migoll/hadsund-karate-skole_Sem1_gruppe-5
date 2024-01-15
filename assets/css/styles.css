@@ -283,6 +283,23 @@ section img {
   font-weight: bold;
 }
 
+.typiske-spørgsmål p{
+margin-bottom: 10px;
+}
+
+.betaling-ved-indmeldelse p{
+  margin-bottom: 10px;
+}
+
+.aarligt-kontingent p{
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.betaling p{
+  margin-bottom: 10px;
+}
+
 /* indmeldelse media queries */
 @media screen and (min-width:750px){
   .menu{
@@ -385,14 +402,35 @@ button img {
 /* Nyheder slut */
 
 /* træning */
-.traeningstider-list {
-  display: flex;
-  justify-content: space-between;
+.traeningstider p, .Sammenhold p, .konkurrencer p, .graduering p{
+  margin-bottom: 10px;
 }
 
-.traeningsklokkeslet {
-  white-space: nowrap;
+.traeningstider-list{
+  display: flex;  
+  flex-direction: column  ;
+  
+  
 }
+
+.borntraeningstider, .voksentraeningstider{
+  display:  flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-block:10px;
+}
+
+.born-dag p:first-of-type, .voksen-dag p:first-of-type{
+  font-weight: bold;
+}
+
+.born-tid, .voksen-tid{
+  white-space: nowrap;
+  margin-top: 1.5rem;
+}
+
+
+
 
 /* Footer */
 
