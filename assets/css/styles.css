@@ -368,6 +368,14 @@ button img {
   padding: 0;
 }
 
+.kontakt-oplysninger li, .bestyrelse li{
+  margin-bottom: 10px;
+}
+
+/* praktisk information media queries*/
+@media screen and (min-width:768px) {
+
+}
 
 /* praktisk information slut*/
 
