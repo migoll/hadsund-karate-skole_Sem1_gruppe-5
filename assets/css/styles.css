@@ -138,6 +138,7 @@ header {
   position: relative;
   text-align: center;
   color: black;
+  padding: 0;
 }
 
 .hero h1 {
@@ -150,6 +151,7 @@ header {
 
 .hero img {
   width: 100%;
+  margin: 0;
 }
 
 /* intro-tekst */
@@ -173,12 +175,69 @@ section {
 }
 p, h2 {
   width: 80%;
-
 }
 
 section p, section h2 {
   display: flex;
 }
+
+/* buttons */ 
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border-style: none;
+  background-color: var(--red);
+  color: white;
+  font-size: 16px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-block: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(227, 30, 36, 0.9);
+}
+
+.blue-box {
+  background-color: var(--blue);
+  color: white;
+  width: 80%;
+  display: flex;
+  margin-inline: 10%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.blue-box p {
+  color: white;
+}
+
+.blue-box h2 {
+  color: white;
+}
+
+/* spacing */
+
+.intro {
+  padding-block: 30px;
+}
+h2 {
+margin: 0px 0px 20px;
+}
+section {
+  padding-block: 20px;
+}
+section img {
+  margin-block: 10px;
+  width: 100%;
+}
+
+
 
 /*Entry point */
 .entry-points {
@@ -187,6 +246,7 @@ section p, section h2 {
   align-items: center;
   gap: var(--generalSpacing);
   flex-direction: column;
+  
 }
 
 .entry-point-om-klubben,  .entry-point-traening, .entry-point-nyheder {
@@ -269,6 +329,71 @@ section p, section h2 {
   }
 }
 
+.typiske-spørgsmål {}
+
+/* nyheder */
+.nyheder-title {
+  text-align: center;
+}
+
+.nyheder-box h2 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.nyheder-box img {
+  padding-block: 10px;
+}
+
+button img {
+  width: 20px;
+}
+
+.filtrer-button button {
+  gap: 10px;
+  margin-left: 5%;
+  text-align: center;
+  display: flex;
+}
+
+.filtrer-button {
+  width: 80%;
+  display: flex; 
+}
+
+/* prakisk information start*/
+
+.kontakt-oplysninger ul, .bestyrelse ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+
+/* praktisk information slut*/
+
+/* Nyheder start */
+
+.nyheder-box{
+  border:  solid white;
+  border-radius: 10px;
+  box-shadow: 3px 3px lightgrey;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  
+}
+/* Nyheder slut */
+
+/* træning */
+.traeningstider-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.traeningsklokkeslet {
+  white-space: nowrap;
+}
+
 /* Footer */
 
 footer {
@@ -288,31 +413,9 @@ footer img {
 }
 
 
-section img{
-  width: 100%;
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
 }
-
-/* prakisk information start*/
-
-.kontaktOplysninger li, .bestyrelse li {
-  list-style-type: none; 
-}
-
-.kontaktOplysninger ul, .bestyrelse ul {
-  padding: 0;
-}
-
-/* praktisk information slut*/
-
-/* Nyheder start */
-
-.nyheder-box{
-  border:  solid white;
-  border-radius: 10px;
-  box-shadow: 3px 3px lightgrey;
-  padding: 1rem;
-  margin: 1rem;
-  background-color: white;
-  
-}
-/* Nyheder slut */
