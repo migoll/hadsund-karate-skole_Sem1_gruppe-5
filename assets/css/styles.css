@@ -522,16 +522,26 @@ input[type="checkbox"]:checked+label+p {
   .instruktoer-alle {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
   }
 
   .instruktoer-alle img {
-    width: 80%;
+    width: 100%;
   }
 
-  .instruktoer-contaioner {
+  .instruktoer-container {
     display: flex;
     justify-content: center;
     margin-inline: 10%;
+  }
+
+  .instruktoer-alle section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .instruktoer-alle p {
+    width: 100%;
   }
 }
 
