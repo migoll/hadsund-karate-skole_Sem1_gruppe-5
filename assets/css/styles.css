@@ -284,6 +284,34 @@ section img {
   border-bottom-right-radius: 8px;
 }
 
+/* entry points desktop */
+
+@media screen and (min-width:768px){
+ 
+  .entry-point-om-klubben,  .entry-point-traening, .entry-point-nyheder, .entry-point-indmeldelse {
+    width: 284px;
+    height: 300px;
+  }
+
+  .ep-om-klubben-mobile, .ep-traening-mobile, .ep-nyheder-mobile {
+    display: none;
+  }
+
+  .ep-om-klubben-desktop, .ep-traening-desktop, .ep-nyheder-desktop {
+    display: unset;
+  }
+
+  .entry-point-om-klubben::before, .entry-point-traening::before, .entry-point-nyheder::before, .entry-point-indmeldelse::before{
+    top: 62%;
+  }
+
+  .entry-point-om-klubben h1, .entry-point-traening h1, .entry-point-nyheder h1, .entry-point-indmeldelse h1{
+    font-size: 32px;
+    white-space: nowrap;
+  }
+
+  }
+
 /* indmeldelse */
 
 .pris{
