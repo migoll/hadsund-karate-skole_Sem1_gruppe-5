@@ -5,9 +5,12 @@
 
 /* generel styling */
 
-*, *::after, *::before {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
+
 .html {
   margin: 0;
 }
@@ -15,10 +18,11 @@
 /* generel styling slut */
 
 body {
-font-family: 'Lato', sans-serif;
-margin: 0;
-background-color: var(--beige);
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  background-color: var(--beige);
 }
+
 
 h1 {
   font-size: 2rem;
@@ -29,44 +33,47 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--blue) ;
+  color: var(--blue);
 }
 
-h3, h4, h5, h6 {
-font-size: 1rem;
-font-weight: bold;
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 p {
-    line-height: 150%;
-    max-width: 65ch;
-    font-size: 1rem;
-    margin: 0;
-    color: var(--black);
+  line-height: 150%;
+  max-width: 65ch;
+  font-size: 1rem;
+  margin: 0;
+  color: var(--black);
 }
 
 /* variabler */
 
 :root {
-  
+
   /* Farver */
-    --blue:#23377F;
-    --red:#E31E24;
-    --beige:#EEEDE8;
-    --black:#252525;
+  --blue: #23377F;
+  --red: #E31E24;
+  --beige: #EEEDE8;
+  --black: #252525;
 
   /* spacing* */
 
-    --generalSpacing:1.25rem;
-    --mediumSpacing:2.5rem;
-    --largeSpacing:5rem;
+  --generalSpacing: 1.25rem;
+  --mediumSpacing: 2.5rem;
+  --largeSpacing: 5rem;
 }
 
 /*Header*/
 
 /*Navbar*/
 
-.menu ul{
+.menu ul {
   list-style: none;
   display: flex;
 }
@@ -104,7 +111,8 @@ header {
   display: flex;
 }
 
-.header-user-icon, .header-burger-menu {
+.header-user-icon,
+.header-burger-menu {
   margin-left: 20px;
   width: 17px;
 }
@@ -156,12 +164,13 @@ header {
 
 /* intro-tekst */
 
-.intro{
+.intro {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.intro p{
+
+.intro p {
   font-weight: bold;
 }
 
@@ -173,15 +182,18 @@ section {
   flex-direction: column;
   align-items: center;
 }
-p, h2 {
+
+p,
+h2 {
   width: 80%;
 }
 
-section p, section h2 {
+section p,
+section h2 {
   display: flex;
 }
 
-/* buttons */ 
+/* buttons */
 .buttons {
   display: flex;
   flex-direction: column;
@@ -224,6 +236,7 @@ button:hover {
 .blue-box h2 {
   color: white;
 }
+
 .blue-box li {
   margin-bottom: 20px;
 }
@@ -233,12 +246,15 @@ button:hover {
 .intro {
   padding-block: 30px;
 }
+
 h2 {
-margin: 0px 0px 20px;
+  margin: 0px 0px 20px;
 }
+
 section {
   padding-block: 20px;
 }
+
 section img {
   margin-block: 10px;
   width: 100%;
@@ -253,15 +269,20 @@ section img {
   align-items: center;
   gap: var(--generalSpacing);
   flex-direction: column;
-  
 }
 
-.entry-point-om-klubben,  .entry-point-traening, .entry-point-nyheder, .entry-point-indmeldelse {
+.entry-point-om-klubben,
+.entry-point-traening,
+.entry-point-nyheder,
+.entry-point-indmeldelse {
   position: relative;
   text-align: center;
 }
 
-.entry-point-om-klubben h1, .entry-point-traening h1, .entry-point-nyheder h1, .entry-point-indmeldelse h1{
+.entry-point-om-klubben h1,
+.entry-point-traening h1,
+.entry-point-nyheder h1,
+.entry-point-indmeldelse h1 {
   position: absolute;
   top: 90%;
   left: 50%;
@@ -270,7 +291,10 @@ section img {
   color: white;
 }
 
-.entry-point-om-klubben::before, .entry-point-traening::before, .entry-point-nyheder::before, .entry-point-indmeldelse::before{
+.entry-point-om-klubben::before,
+.entry-point-traening::before,
+.entry-point-nyheder::before,
+.entry-point-indmeldelse::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -284,66 +308,110 @@ section img {
   border-bottom-right-radius: 8px;
 }
 
+/* entry points desktop */
+
+@media screen and (min-width:768px) {
+
+  .entry-point-om-klubben,
+  .entry-point-traening,
+  .entry-point-nyheder,
+  .entry-point-indmeldelse {
+    width: 284px;
+    height: 300px;
+  }
+
+  .ep-om-klubben-mobile,
+  .ep-traening-mobile,
+  .ep-nyheder-mobile,
+  .ep-indmeldelse-mobile {
+    display: none;
+  }
+
+  .ep-om-klubben-desktop,
+  .ep-traening-desktop,
+  .ep-nyheder-desktop,
+  .ep-indmeldelse-desktop {
+    display: unset;
+  }
+
+  .entry-point-om-klubben::before,
+  .entry-point-traening::before,
+  .entry-point-nyheder::before,
+  .entry-point-indmeldelse::before {
+    top: 62%;
+  }
+
+  .entry-point-om-klubben h1,
+  .entry-point-traening h1,
+  .entry-point-nyheder h1,
+  .entry-point-indmeldelse h1 {
+    font-size: 32px;
+    white-space: nowrap;
+  }
+
+  .entry-points {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+
 /* indmeldelse */
 
-.pris{
+.pris {
   font-weight: bold;
 }
 
-.typiske-spørgsmål p{
-margin-bottom: 10px;
-}
-
-.betaling-ved-indmeldelse p{
+.typiske-spørgsmål p {
   margin-bottom: 10px;
 }
 
-.aarligt-kontingent p{
+.betaling-ved-indmeldelse p {
+  margin-bottom: 10px;
+}
+
+.aarligt-kontingent p {
   margin-bottom: 10px;
   white-space: nowrap;
 }
 
-.betaling p{
+.betaling p {
   margin-bottom: 10px;
 }
 
 /* indmeldelse media queries */
-@media screen and (min-width:768px){
- 
-  .grid{
+@media screen and (min-width:768px) {
+
+  .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 12rem 1fr 20rem;
-    
+
   }
 
-  .Indmeldelse-billede1{
+  .Indmeldelse-billede1 {
     grid-column: 2/3;
-  
+
   }
 
-  .udstyr{
+  .udstyr {
     grid-column: 1/2;
     grid-row: 1/2;
   }
 
-  .Indmeldelse-billede2{
+  .Indmeldelse-billede2 {
     grid-column: 2/3;
-  grid-row: 3/4;
+    grid-row: 3/4;
   }
 
-  .vi-anbefaler{
+  .vi-anbefaler {
     grid-column: 1/2;
   }
 
-  .karate-gi{
+  .karate-gi {
     grid-row: 1.8/3;
   }
 
-  .entry-points{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-  }
 }
 
 
@@ -374,17 +442,19 @@ button img {
 
 .filtrer-button {
   width: 80%;
-  display: flex; 
+  display: flex;
 }
 
 /* prakisk information start*/
 
-.kontakt-oplysninger ul, .bestyrelse ul {
-  list-style-type: none; 
+.kontakt-oplysninger ul,
+.bestyrelse ul {
+  list-style-type: none;
   padding: 0;
 }
 
-.kontakt-oplysninger li, .bestyrelse li{
+.kontakt-oplysninger li,
+.bestyrelse li {
   margin-bottom: 10px;
 }
 
@@ -416,21 +486,23 @@ label {
   border-radius: 0 0 8px 8px;
 }
 
-input[type="checkbox"]:checked + label + p {
+input[type="checkbox"]:checked+label+p {
   display: block;
 }
 
 /* praktisk information media queries*/
 @media screen and (min-width:768px) {
-  .menu{
+  .menu {
     display: block;
   }
-  
-  .header-burger-menu{
+
+  .header-burger-menu {
     display: none;
   }
 
-  .kontakt-oplysninger h2, .bestyrelse h2, .vedtaegter h2 {
+  .kontakt-oplysninger h2,
+  .bestyrelse h2,
+  .vedtaegter h2 {
     justify-content: center;
   }
 }
@@ -438,55 +510,81 @@ input[type="checkbox"]:checked + label + p {
 /* praktisk information slut*/
 
 /* instruktører start*/
-.instruktoer6 p{
+.instruktoer6 p {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+  .menu {
+    display: block;
+  }
+
+  .instruktoer-alle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .instruktoer-alle img {
+    width: 80%;
+  }
+
+  .instruktoer-contaioner {
+    display: flex;
+    justify-content: center;
+    margin-inline: 10%;
+  }
+}
+
+.header-burger-menu {
+  display: none;
 }
 
 /* instruktører slut*/
 
 /* Nyheder start */
 
-.nyheder-box{
-  border:  solid white;
+.nyheder-box {
+  border: solid white;
   border-radius: 10px;
   box-shadow: 3px 3px lightgrey;
   padding: 1rem;
   margin: 1rem;
   background-color: white;
-  
+
 }
-.text-line{
+
+.text-line {
   padding-bottom: 10px;
 }
 
 /* Nyheder media queries */
-@media screen and (min-width:768px){
-  .filtrer-button{
+@media screen and (min-width:768px) {
+  .filtrer-button {
     position: relative;
-    left: 17.5rem;
+    left: 10rem;
   }
 }
 
 /* Nyheder slut */
 
 /* Om Ashihara start */
-.text-linje{
+.text-linje {
   padding-bottom: 10px;
 }
 
 /* Om ashihara media queries */
 @media screen and (min-width:768px) {
-  .grid-template-omashihara{
+  .grid-template-omashihara {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
+
 }
 
 
 /* Om Ashihara Slut */
 
-/* index */ 
+/* index */
 .ashihara-kort-fortalt p {
   margin-bottom: 20px;
 }
@@ -495,43 +593,68 @@ input[type="checkbox"]:checked + label + p {
   padding: 0;
   margin: 0;
 }
-.front-page-hero img{
+
+.front-page-hero img {
   padding: 0;
   margin: 0;
 }
 
+.budskab{
+  padding-left: 2rem;
+  font-size: 12px;
+}
+
+/* media queries til index - forside */
+@media screen and (min-width:768px){
+  .h2-kort-fortalt{
+    position: relative;
+    left: 18rem;
+  }
+  .buskab{
+
+  }
+}
+
+/* index slut */
 /* træning */
-.traeningstider p, .Sammenhold p, .konkurrencer p, .graduering p{
+.traeningstider p,
+.Sammenhold p,
+.konkurrencer p,
+.graduering p {
   margin-bottom: 10px;
 }
 
-.traeningstider-list{
-  display: flex;  
-  flex-direction: column  ;
+.traeningstider-list {
+  display: flex;
+  flex-direction: column;
 }
 
-.borntraeningstider, .voksentraeningstider{
-  display:  flex;
+.borntraeningstider,
+.voksentraeningstider {
+  display: flex;
   flex-direction: row;
   gap: 3rem;
-  margin-block:10px;
+  margin-block: 10px;
 }
 
-.born-dag p:first-of-type, .voksen-dag p:first-of-type{
+.born-dag p:first-of-type,
+.voksen-dag p:first-of-type {
   font-weight: bold;
 }
 
-.born-tid, .voksen-tid{
+.born-tid,
+.voksen-tid {
   white-space: nowrap;
   margin-top: 1.5rem;
 }
 
 /* træning media queries */
-@media screen and (min-width:768px){
-  h1{
+@media screen and (min-width:768px) {
+  h1 {
     font-size: 60px;
   }
-  .traeningstider-list{
+
+  .traeningstider-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;
@@ -540,26 +663,26 @@ input[type="checkbox"]:checked + label + p {
     align-items: start;
   }
 
-  .borntraeningstider{
+  .borntraeningstider {
     grid-column: 1/2;
     max-width: 300px;
   }
 
-  .voksentraeningstider{
+  .voksentraeningstider {
     grid-column: 2/3;
     max-width: 300px;
   }
 
-  .traening-grid{
+  .traening-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-inline: 10%;
   }
 
 
-  .konkurrencer{
+  .konkurrencer {
     grid-column: 2/3;
-    grid-row:2/3;
+    grid-row: 2/3;
   }
 }
 
