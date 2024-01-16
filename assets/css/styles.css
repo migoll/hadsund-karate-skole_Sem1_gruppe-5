@@ -379,11 +379,11 @@ section img {
   margin-bottom: 10px;
 }
 
-.vi-anbefaler ul{
+.vi-anbefaler ul {
   display: flex;
   flex-direction: column;
 }
-  
+
 
 /* indmeldelse media queries */
 @media screen and (min-width:768px) {
@@ -414,19 +414,19 @@ section img {
     grid-row: 1.8/3;
   }
 
-  .buttons{
+  .buttons {
     display: flex;
     flex-direction: row;
     gap: 3rem;
   }
 
-  .hero img:last-of-type{
-display: flex;
+  .hero img:last-of-type {
+    display: flex;
   }
 
-  .hero img:first-of-type{
+  .hero img:first-of-type {
     display: none;
-      }
+  }
 
 }
 
@@ -710,16 +710,17 @@ input[type="checkbox"]:checked+label+p {
       flex: 1;
     }
 
-  .front-page-hero img:last-of-type{
-    display: flex;
-  }
+    .front-page-hero img:last-of-type {
+      display: flex;
+    }
 
-  .front-page-hero img:first-of-type{
-    display: none;
-  }
-  .budskab{
-    font-size: 25px;
-  }
+    .front-page-hero img:first-of-type {
+      display: none;
+    }
+
+    .budskab {
+      font-size: 25px;
+    }
 
   }
 
@@ -868,3 +869,4 @@ input[type="checkbox"]:checked+label+p {
     justify-content: center;
     gap: 20px;
   }
+}
