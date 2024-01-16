@@ -105,6 +105,9 @@ header {
   background-color: #23377F;
 }
 
+/*Header media queries*/
+
+
 /*Header icons*/
 
 .icons {
@@ -139,6 +142,32 @@ header {
 
 /*Header slut */
 
+/* footer */
+
+footer {
+  width: 100%;
+  background-color: #23377F;
+  color: white;
+  text-align: center;
+}
+
+footer section {
+  padding-block: 10px;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*footer slut */
 
 /* hero styling */
 
@@ -353,6 +382,7 @@ section img {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    margin: 0 auto 40px;
   }
 }
 
@@ -492,13 +522,6 @@ input[type="checkbox"]:checked+label+p {
 
 /* praktisk information media queries*/
 @media screen and (min-width:768px) {
-  .menu {
-    display: block;
-  }
-
-  .header-burger-menu {
-    display: none;
-  }
 
   .kontakt-oplysninger ul {
     width: 273.45px;
@@ -534,9 +557,7 @@ input[type="checkbox"]:checked+label+p {
 }
 
 @media screen and (min-width:768px) {
-  .menu {
-    display: block;
-  }
+
 
   .instruktoer-alle {
     display: grid;
@@ -569,6 +590,12 @@ input[type="checkbox"]:checked+label+p {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
+  }
+
+  .instruktoer1-text, .instruktoer2-text, .instruktoer3-text, .instruktoer4-text, .instruktoer5-text, .instruktoer6-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
   .header-burger-menu {
@@ -807,32 +834,5 @@ input[type="checkbox"]:checked+label+p {
       display: flex;
       flex-direction: row;
     }
-
   }
-
-
-  /* Footer */
-
-  footer {
-    width: 100%;
-    background-color: #23377F;
-    color: white;
-    text-align: center;
-  }
-
-  footer section {
-    padding-block: 10px;
-  }
-
-  footer img {
-    width: 30px;
-    height: 30px;
-  }
-
-
-  .footer-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
+}
