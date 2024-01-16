@@ -616,12 +616,11 @@ input[type="checkbox"]:checked+label+p {
 
 /* media queries til index - forside */
 @media screen and (min-width:768px){
-  .h2-kort-fortalt{
-    position: relative;
-    left: 18rem;
+  p {
+    max-width: 60%;
   }
-  .buskab{
-
+  h2 {
+    max-width: 60%;
   }
 }
 
