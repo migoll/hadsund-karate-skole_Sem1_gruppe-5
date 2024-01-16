@@ -509,6 +509,22 @@ input[type="checkbox"]:checked+label+p {
 
 /* praktisk information slut*/
 
+/* vedtægter start*/
+
+.vedtaegter h2 {
+  font-size: 1.5rem;
+}
+
+.vedtaegter p {
+  margin-bottom: 10px;
+}
+
+.vedtaegter h2 {
+  margin-top: 20px;
+}
+
+/* vedtægter slut*/
+
 /* instruktører start*/
 .instruktoer6 p {
   margin-bottom: 20px;
@@ -635,12 +651,13 @@ display: flex;
   margin: 0;
 }
 
-.budskab{
+.budskab {
   padding-left: 2rem;
   font-size: 12px;
 }
 
 /* media queries til index - forside */
+
 @media screen and (min-width:768px){
   p {
     max-width: 60%;
