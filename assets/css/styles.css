@@ -253,7 +253,6 @@ section img {
   align-items: center;
   gap: var(--generalSpacing);
   flex-direction: column;
-  
 }
 
 .entry-point-om-klubben,  .entry-point-traening, .entry-point-nyheder, .entry-point-indmeldelse {
@@ -293,11 +292,11 @@ section img {
     height: 300px;
   }
 
-  .ep-om-klubben-mobile, .ep-traening-mobile, .ep-nyheder-mobile {
+  .ep-om-klubben-mobile, .ep-traening-mobile, .ep-nyheder-mobile, .ep-indmeldelse-mobile {
     display: none;
   }
 
-  .ep-om-klubben-desktop, .ep-traening-desktop, .ep-nyheder-desktop {
+  .ep-om-klubben-desktop, .ep-traening-desktop, .ep-nyheder-desktop, .ep-indmeldelse-desktop {
     display: unset;
   }
 
@@ -310,6 +309,11 @@ section img {
     white-space: nowrap;
   }
 
+  .entry-points {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
   }
 
 /* indmeldelse */
@@ -368,10 +372,10 @@ margin-bottom: 10px;
     grid-row: 1.8/3;
   }
 
-  .entry-points{
+  /* .entry-points{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-  }
+  } */
 }
 
 
