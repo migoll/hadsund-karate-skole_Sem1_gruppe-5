@@ -213,12 +213,19 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.blue-box ul {
+  width: 80%;
+}
+
 .blue-box p {
   color: white;
 }
 
 .blue-box h2 {
   color: white;
+}
+.blue-box li {
+  margin-bottom: 20px;
 }
 
 /* spacing */
@@ -249,12 +256,12 @@ section img {
   
 }
 
-.entry-point-om-klubben,  .entry-point-traening, .entry-point-nyheder {
+.entry-point-om-klubben,  .entry-point-traening, .entry-point-nyheder, .entry-point-indmeldelse {
   position: relative;
   text-align: center;
 }
 
-.entry-point-om-klubben h1, .entry-point-traening h1, .entry-point-nyheder h1{
+.entry-point-om-klubben h1, .entry-point-traening h1, .entry-point-nyheder h1, .entry-point-indmeldelse h1{
   position: absolute;
   top: 90%;
   left: 50%;
@@ -263,7 +270,7 @@ section img {
   color: white;
 }
 
-.entry-point-om-klubben::before, .entry-point-traening::before, .entry-point-nyheder::before{
+.entry-point-om-klubben::before, .entry-point-traening::before, .entry-point-nyheder::before, .entry-point-indmeldelse::before{
   content: "";
   position: absolute;
   top: 50%;
@@ -329,7 +336,6 @@ section img {
   }
 }
 
-.typiske-spørgsmål {}
 
 /* nyheder */
 .nyheder-title {
@@ -438,7 +444,19 @@ button img {
 
 /* Om Ashihara Slut */
 
+/* index */ 
+.ashihara-kort-fortalt p {
+  margin-bottom: 20px;
+}
 
+.front-page-hero {
+  padding: 0;
+  margin: 0;
+}
+.front-page-hero img{
+  padding: 0;
+  margin: 0;
+}
 
 /* træning */
 .traeningstider-list {
