@@ -290,16 +290,26 @@ section img {
   font-weight: bold;
 }
 
-/* indmeldelse media queries */
-@media screen and (min-width:750px){
-  .menu{
-    display: block;
-  }
-  
-  .header-burger-menu{
-    display: none;
-  }
+.typiske-spørgsmål p{
+margin-bottom: 10px;
+}
 
+.betaling-ved-indmeldelse p{
+  margin-bottom: 10px;
+}
+
+.aarligt-kontingent p{
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.betaling p{
+  margin-bottom: 10px;
+}
+
+/* indmeldelse media queries */
+@media screen and (min-width:768px){
+ 
   .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -491,14 +501,68 @@ input[type="checkbox"]:checked + label + p {
 }
 
 /* træning */
-.traeningstider-list {
-  display: flex;
-  justify-content: space-between;
+.traeningstider p, .Sammenhold p, .konkurrencer p, .graduering p{
+  margin-bottom: 10px;
 }
 
-.traeningsklokkeslet {
-  white-space: nowrap;
+.traeningstider-list{
+  display: flex;  
+  flex-direction: column  ;
 }
+
+.borntraeningstider, .voksentraeningstider{
+  display:  flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-block:10px;
+}
+
+.born-dag p:first-of-type, .voksen-dag p:first-of-type{
+  font-weight: bold;
+}
+
+.born-tid, .voksen-tid{
+  white-space: nowrap;
+  margin-top: 1.5rem;
+}
+
+/* træning media queries */
+@media screen and (min-width:768px){
+  h1{
+    font-size: 60px;
+  }
+  .traeningstider-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin-inline: 10%;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .borntraeningstider{
+    grid-column: 1/2;
+    max-width: 300px;
+  }
+
+  .voksentraeningstider{
+    grid-column: 2/3;
+    max-width: 300px;
+  }
+
+  .traening-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 10%;
+  }
+
+
+  .konkurrencer{
+    grid-column: 2/3;
+    grid-row:2/3;
+  }
+}
+
 
 /* Footer */
 
