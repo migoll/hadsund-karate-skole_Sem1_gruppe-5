@@ -501,8 +501,7 @@ input[type="checkbox"]:checked+label+p {
   }
 
   .kontakt-oplysninger h2,
-  .bestyrelse h2,
-  .vedtaegter h2 {
+  .bestyrelse h2 {
     justify-content: center;
   }
 }
