@@ -562,261 +562,277 @@ input[type="checkbox"]:checked+label+p {
   .instruktoer-alle p {
     width: 100%;
   }
-}
 
-.header-burger-menu {
-  display: none;
-}
+  @media screen and (min-width:1024px) {
+    .instruktoer-alle {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
-/* instruktører slut*/
-
-/* Nyheder start */
-
-.nyheder-box {
-  border: solid white;
-  border-radius: 10px;
-  box-shadow: 3px 3px lightgrey;
-  padding: 1rem;
-  margin: 1rem;
-  background-color: white;
-
-}
-
-.text-line {
-  padding-bottom: 10px;
-}
-
-/* Nyheder media queries */
-@media screen and (min-width:768px) {
-  .filtrer-button {
-    position: relative;
-    left: 10rem;
-  }
-}
-
-/* Nyheder slut */
-
-/* Om Ashihara start */
-.text-linje {
-  padding-bottom: 10px;
-}
-
-/* Om ashihara media queries */
-
-@media screen and (min-width:768px) {
-  .grid-template-omashihara {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 23% 10% 10% 40% 10%;
-    margin-inline: 10%;
-}
-
-.omashihara-section1{
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.grid-aand{
-  grid-column: 2/3;
-  grid-row: -5/-2;
-}
-
-.grid-img4{
-  grid-column: 2/3;
-  grid-row: -2/-1;
-}
-
-.grid-img1 img:last-of-type{
-display: flex;
-}
-
-.grid-img1 img:first-of-type{
-  display: none;
-  }
-}
-
-
-/* Om Ashihara Slut */
-
-/* index */
-.ashihara-kort-fortalt p {
-  margin-bottom: 20px;
-}
-
-.front-page-hero {
-  padding: 0;
-  margin: 0;
-}
-
-.front-page-hero img {
-  padding: 0;
-  margin: 0;
-}
-
-.budskab {
-  padding-left: 2rem;
-  font-size: 12px;
-}
-
-/* media queries til index - forside */
-
-@media screen and (min-width:768px){
-  p {
-    max-width: 65ch;
   }
 
-  h2 {
-  max-width: 603.2px;
+  .header-burger-menu {
+    display: none;
   }
 
-  .container {
+  /* instruktører slut*/
+
+  /* Nyheder start */
+
+  .nyheder-box {
+    border: solid white;
+    border-radius: 10px;
+    box-shadow: 3px 3px lightgrey;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+
+  }
+
+  .text-line {
+    padding-bottom: 10px;
+  }
+
+  /* Nyheder media queries */
+  @media screen and (min-width:768px) {
+    .filtrer-button {
+      position: relative;
+      left: 10rem;
+    }
+  }
+
+  /* Nyheder slut */
+
+  /* Om Ashihara start */
+  .text-linje {
+    padding-bottom: 10px;
+  }
+
+  /* Om ashihara media queries */
+
+  @media screen and (min-width:768px) {
+    .grid-template-omashihara {
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 23% 10% 10% 40% 10%;
+      margin-inline: 10%;
+    }
+
+    .omashihara-section1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .grid-aand {
+      grid-column: 2/3;
+      grid-row: -5/-2;
+    }
+
+    .grid-img4 {
+      grid-column: 2/3;
+      grid-row: -2/-1;
+    }
+
+    .grid-img1 img:last-of-type {
+      display: flex;
+    }
+
+    .grid-img1 img:first-of-type {
+      display: none;
+    }
+  }
+
+
+  /* Om Ashihara Slut */
+
+  /* index */
+  .ashihara-kort-fortalt p {
+    margin-bottom: 20px;
+  }
+
+  .front-page-hero {
+    padding: 0;
+    margin: 0;
+  }
+
+  .front-page-hero img {
+    padding: 0;
+    margin: 0;
+  }
+
+  .budskab {
+    padding-left: 2rem;
+    font-size: 12px;
+  }
+
+  /* media queries til index - forside */
+
+  @media screen and (min-width:768px) {
+    p {
+      max-width: 65ch;
+    }
+
+    h2 {
+      max-width: 603.2px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ashihara-kort-fortalt {
+      flex: 1;
+    }
+
+    .intro {
+      flex: 1;
+    }
+  }
+
+  /* index slut */
+
+  /* træning */
+  .traeningstider p,
+  .Sammenhold p,
+  .konkurrencer p,
+  .graduering p {
+    margin-bottom: 10px;
+  }
+
+  .traeningstider-list {
     display: flex;
     flex-direction: column;
   }
 
-  .ashihara-kort-fortalt {
-    flex: 1;
-  }
-
-  .intro {
-    flex: 1;
-  }
-}
-
-/* index slut */
-
-/* træning */
-.traeningstider p,
-.Sammenhold p,
-.konkurrencer p,
-.graduering p {
-  margin-bottom: 10px;
-}
-
-.traeningstider-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.borntraeningstider,
-.voksentraeningstider {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  margin-block: 10px;
-}
-
-.born-dag p:first-of-type,
-.voksen-dag p:first-of-type {
-  font-weight: bold;
-}
-
-.born-tid,
-.voksen-tid {
-  white-space: nowrap;
-  margin-top: 1.5rem;
-}
-
-/* træning media queries */
-@media screen and (min-width:768px) {
-  h1 {
-    font-size: 60px;
-  }
-
-  .traeningstider-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
-    margin-inline: 10%;
-    justify-items: center;
-    align-items: start;
-  }
-
-  .borntraeningstider {
-    grid-column: 1/2;
-    max-width: 300px;
-  }
-
+  .borntraeningstider,
   .voksentraeningstider {
-    grid-column: 2/3;
-    max-width: 300px;
-  }
-
-  .traening-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-inline: 10%;
-  }
-
-  .konkurrencer {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .sammenhold p, .graduering p, .konkurrencer p, .sammenhold h2, .graduering h2, .konkurrencer h2 {
-    width: 100%;
-  }
-
-  .sammenhold, .graduering, .traening-billede2 {
-    padding-right: 20px;
-  }
-
-  .konkurrencer, .traening-billede1, .traening-billede3 {
-    padding-left: 20px;
-  }
-
-  .cheftraener{
     display: flex;
     flex-direction: row;
+    gap: 3rem;
+    margin-block: 10px;
   }
 
-  .cheftraenerImg img:first-of-type{
-display: none;
+  .born-dag p:first-of-type,
+  .voksen-dag p:first-of-type {
+    font-weight: bold;
   }
 
-  .cheftraenerImg img:last-of-type{
-    display:flex;
-      }
+  .born-tid,
+  .voksen-tid {
+    white-space: nowrap;
+    margin-top: 1.5rem;
+  }
 
-  .socialEngagementImg img:first-of-type{
-    display: none;
-     }
-        
-  .socialEngagementImg img:last-of-type{
-     display:flex;
-       }
+  /* træning media queries */
+  @media screen and (min-width:768px) {
+    h1 {
+      font-size: 60px;
+    }
 
-    .social-engagement{
+    .traeningstider-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 80%;
+      margin-inline: 10%;
+      justify-items: center;
+      align-items: start;
+    }
+
+    .borntraeningstider {
+      grid-column: 1/2;
+      max-width: 300px;
+    }
+
+    .voksentraeningstider {
+      grid-column: 2/3;
+      max-width: 300px;
+    }
+
+    .traening-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-inline: 10%;
+    }
+
+    .konkurrencer {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    .sammenhold p,
+    .graduering p,
+    .konkurrencer p,
+    .sammenhold h2,
+    .graduering h2,
+    .konkurrencer h2 {
+      width: 100%;
+    }
+
+    .sammenhold,
+    .graduering,
+    .traening-billede2 {
+      padding-right: 20px;
+    }
+
+    .konkurrencer,
+    .traening-billede1,
+    .traening-billede3 {
+      padding-left: 20px;
+    }
+
+    .cheftraener {
       display: flex;
       flex-direction: row;
     }
 
-}
+    .cheftraenerImg img:first-of-type {
+      display: none;
+    }
+
+    .cheftraenerImg img:last-of-type {
+      display: flex;
+    }
+
+    .socialEngagementImg img:first-of-type {
+      display: none;
+    }
+
+    .socialEngagementImg img:last-of-type {
+      display: flex;
+    }
+
+    .social-engagement {
+      display: flex;
+      flex-direction: row;
+    }
+
+  }
 
 
-/* Footer */
+  /* Footer */
 
-footer {
-  width: 100%;
-  background-color: #23377F;
-  color: white;
-  text-align: center;
-}
+  footer {
+    width: 100%;
+    background-color: #23377F;
+    color: white;
+    text-align: center;
+  }
 
-footer section {
-  padding-block: 10px;
-}
+  footer section {
+    padding-block: 10px;
+  }
 
-footer img {
-  width: 30px;
-  height: 30px;
-}
+  footer img {
+    width: 30px;
+    height: 30px;
+  }
 
 
-.footer-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-}
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
