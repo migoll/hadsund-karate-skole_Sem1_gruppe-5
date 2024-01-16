@@ -20,6 +20,7 @@ margin: 0;
 background-color: var(--beige);
 }
 
+
 h1 {
   font-size: 2rem;
   font-weight: bold;
@@ -500,6 +501,23 @@ input[type="checkbox"]:checked + label + p {
   margin: 0;
 }
 
+.budskab{
+  padding-left: 2rem;
+  font-size: 12px;
+}
+
+/* media queries til index - forside */
+@media screen and (min-width:768px){
+  .h2-kort-fortalt{
+    position: relative;
+    left: 18rem;
+  }
+  .buskab{
+
+  }
+}
+
+/* index slut */
 /* træning */
 .traeningstider p, .Sammenhold p, .konkurrencer p, .graduering p{
   margin-bottom: 10px;
