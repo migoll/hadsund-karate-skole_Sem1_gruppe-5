@@ -378,6 +378,38 @@ button img {
   margin-bottom: 10px;
 }
 
+/* praktisk information accordion */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: block;
+  background-color: var(--blue);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.vedtaegter-accordion p {
+  display: none;
+  padding: 10px 20px;
+  margin: 0;
+  border: 2px solid var(--blue);
+  background-color: white;
+  font-weight: bold;
+  border-radius: 0 0 8px 8px;
+}
+
+input[type="checkbox"]:checked + label + p {
+  display: block;
+}
+
 /* praktisk information media queries*/
 @media screen and (min-width:768px) {
   .menu{
