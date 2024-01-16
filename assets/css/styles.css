@@ -523,7 +523,9 @@ input[type="checkbox"]:checked+label+p {
     grid-template-columns: 1fr 1fr;
   }
 
-  .instruktoer-alle img {}
+  .instruktoer-alle img {
+    width: 80%;
+  }
 
   .instruktoer-contaioner {
     display: flex;
