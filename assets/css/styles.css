@@ -765,6 +765,33 @@ display: flex;
   .konkurrencer, .traening-billede1, .traening-billede3 {
     padding-left: 20px;
   }
+
+  .cheftraener{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cheftraenerImg img:first-of-type{
+display: none;
+  }
+
+  .cheftraenerImg img:last-of-type{
+    display:flex;
+      }
+
+  .socialEngagementImg img:first-of-type{
+    display: none;
+     }
+        
+  .socialEngagementImg img:last-of-type{
+     display:flex;
+       }
+
+    .social-engagement{
+      display: flex;
+      flex-direction: row;
+    }
+
 }
 
 
