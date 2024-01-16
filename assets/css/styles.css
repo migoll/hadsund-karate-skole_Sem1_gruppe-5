@@ -538,16 +538,26 @@ input[type="checkbox"]:checked+label+p {
   .instruktoer-alle {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
   }
 
   .instruktoer-alle img {
-    width: 80%;
+    width: 100%;
   }
 
-  .instruktoer-contaioner {
+  .instruktoer-container {
     display: flex;
     justify-content: center;
     margin-inline: 10%;
+  }
+
+  .instruktoer-alle section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .instruktoer-alle p {
+    width: 100%;
   }
 }
 
@@ -589,12 +599,38 @@ input[type="checkbox"]:checked+label+p {
 }
 
 /* Om ashihara media queries */
+
 @media screen and (min-width:768px) {
   .grid-template-omashihara {
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+    grid-template-rows: 23% 10% 10% 40% 10%;
+    margin-inline: 10%;
+}
 
+.omashihara-section1{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.grid-aand{
+  grid-column: 2/3;
+  grid-row: -5/-2;
+}
+
+.grid-img4{
+  grid-column: 2/3;
+  grid-row: -2/-1;
+}
+
+.grid-img1 img:last-of-type{
+display: flex;
+}
+
+.grid-img1 img:first-of-type{
+  display: none;
+  }
 }
 
 
@@ -621,13 +657,14 @@ input[type="checkbox"]:checked+label+p {
 }
 
 /* media queries til index - forside */
-@media screen and (min-width:768px) {
-  .h2-kort-fortalt {
-    position: relative;
-    left: 18rem;
-  }
 
-  .buskab {}
+@media screen and (min-width:768px){
+  p {
+    max-width: 60%;
+  }
+  h2 {
+    max-width: 60%;
+  }
 }
 
 /* index slut */
