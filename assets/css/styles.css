@@ -463,7 +463,7 @@ input[type="checkbox"]:checked + label + p {
 @media screen and (min-width:768px){
   .filtrer-button{
     position: relative;
-    left: 17.5rem;
+    left: 10rem;
   }
 }
 
