@@ -379,29 +379,31 @@ section img {
   margin-bottom: 10px;
 }
 
+.vi-anbefaler ul{
+  display: flex;
+  flex-direction: column;
+}
+  
+
 /* indmeldelse media queries */
 @media screen and (min-width:768px) {
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 12rem 1fr 20rem;
-
+    grid-template-rows: 1fr 1fr;
+    margin-inline: 10%;
   }
 
   .Indmeldelse-billede1 {
     grid-column: 2/3;
-
-  }
-
-  .udstyr {
-    grid-column: 1/2;
     grid-row: 1/2;
+
   }
 
   .Indmeldelse-billede2 {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
 
   .vi-anbefaler {
@@ -411,6 +413,20 @@ section img {
   .karate-gi {
     grid-row: 1.8/3;
   }
+
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .hero img:last-of-type{
+display: flex;
+  }
+
+  .hero img:first-of-type{
+    display: none;
+      }
 
 }
 
@@ -659,6 +675,7 @@ display: flex;
   font-size: 12px;
 }
 
+
 /* media queries til index - forside */
 
 @media screen and (min-width:768px){
@@ -681,6 +698,17 @@ display: flex;
 
   .intro {
     flex: 1;
+  }
+
+  .front-page-hero img:last-of-type{
+    display: flex;
+  }
+
+  .front-page-hero img:first-of-type{
+    display: none;
+  }
+  .budskab{
+    font-size: 25px;
   }
 }
 
