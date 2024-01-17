@@ -272,14 +272,23 @@ button:hover {
 
 .blue-box p {
   color: white;
+  margin-bottom: 20px;
 }
 
 .blue-box h2 {
   color: white;
+  justify-content: center;
 }
 
 .blue-box li {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+  .blue-box {
+    max-width: 603.2px;
+    margin: 0 auto;
+  }
 }
 
 /* spacing */
