@@ -288,7 +288,7 @@ button:hover {
 @media screen and (min-width:768px) {
   .blue-box {
     max-width: 603.2px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 }
 
@@ -406,9 +406,15 @@ section img {
 
   .entry-points {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto 20px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .entry-points {
     flex-direction: row;
-    margin: 0 auto 40px;
   }
 }
 
@@ -523,14 +529,19 @@ button img {
 
 .filtrer-button button {
   gap: 10px;
-  margin-left: 5%;
   text-align: center;
   display: flex;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
 }
 
 .filtrer-button {
   width: 80%;
   display: flex;
+  
 }
 
 /* prakisk information start*/
@@ -728,7 +739,6 @@ input[type="checkbox"]:checked+label+p {
   @media screen and (min-width:768px) {
     .filtrer-button {
       position: relative;
-      left: 10rem;
     }
   }
 
