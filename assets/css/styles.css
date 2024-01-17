@@ -106,9 +106,17 @@ header {
 }
 
 /*Header media queries*/
+
 @media screen and (min-width:1024px) {
   .menu {
     display: unset;
+  }
+  nav ul li {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .header-burger-menu {
+    display: none;
   }
 }
 
@@ -634,9 +642,6 @@ input[type="checkbox"]:checked+label+p {
     text-align: center;
   }
 
-  .header-burger-menu {
-    display: none;
-  }
 
   .instruktoe1-img img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
     display:block;
