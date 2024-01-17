@@ -470,6 +470,14 @@ display: flex;
         display: none;
       }
 
+      .Indmeldelse-billede2 img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+        display:block;
+      }
+  
+      .Indmeldelse-billede2 img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
+        display: none;
+      }
+
 }
 
 
@@ -628,6 +636,55 @@ input[type="checkbox"]:checked+label+p {
 
   .header-burger-menu {
     display: none;
+  }
+
+  .instruktoe1-img img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+    display:block;
+  }
+
+  .instruktoe1-img img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
+    display: none;
+  }
+
+  .instruktoer2-img img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+    display:block;
+  }
+
+  .instruktoer2-img img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
+    display: none;
+  }
+
+  .instruktoer3-img img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+    display:block;
+  }
+
+  .instruktoer3-img img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
+    display: none;
+  }
+
+  .instruktoer4-img img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+    display:block;
+  }
+
+  .instruktoer4-img img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
+    display: none;
+  }
+
+  .instruktoer5-img img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+    display:block;
+  }
+
+  .instruktoer5-img img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
+    display: none;
+  }
+
+  .instruktoer6-img img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+    display:block;
+  }
+
+  .instruktoer6-img img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
+    display: none;
+  }
   }
 
   /* instruktører slut*/
@@ -879,30 +936,58 @@ input[type="checkbox"]:checked+label+p {
       padding-left: 20px;
     }
 
-    .cheftraener {
-      display: flex;
-      flex-direction: row;
+    .traening-billede1 img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+      display:block;
     }
-
-    .cheftraenerImg img:first-of-type {
+  
+    .traening-billede1 img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
       display: none;
     }
 
-    .cheftraenerImg img:last-of-type {
-      display: flex;
+    .traening-billede2 img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+      display:block;
     }
-
-    .socialEngagementImg img:first-of-type {
+  
+    .traening-billede2 img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
       display: none;
     }
 
-    .socialEngagementImg img:last-of-type {
-      display: flex;
+    .traening-billede3 img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+      display:block;
+    }
+  
+    .traening-billede3 img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
+      display: none;
     }
 
-    .social-engagement {
-      display: flex;
-      flex-direction: row;
-    }
+  }
+
+  /* Om klubben start */
+  /* om klubben media queries */
+  @media screen and (min-width:768px){
+  .cheftraener {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cheftraenerImg img:first-of-type {
+    display: none;
+  }
+
+  .cheftraenerImg img:last-of-type {
+    display: flex;
+  }
+
+  .socialEngagementImg img:first-of-type {
+    display: none;
+  }
+
+  .socialEngagementImg img:last-of-type {
+    display: flex;
+  }
+
+  .social-engagement {
+    display: flex;
+    flex-direction: row;
   }
 }
