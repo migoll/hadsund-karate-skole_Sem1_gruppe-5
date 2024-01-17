@@ -238,6 +238,7 @@ section h2 {
 .buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 button {
@@ -742,16 +743,22 @@ input[type="checkbox"]:checked+label+p {
 
   @media screen and (min-width:768px) {
     .grid-template-omashihara {
-
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-row: auto 500px 500px auto 700px;
       margin-inline: 10%;
     }
 
-    .grid-img1 img, .grid-img2 img, .grid-img3 img{
+    .grid-img1 img, .grid-img2 img, .grid-img3 img, .grid-img4 img{
       max-height: 500px;
-      
+      width: 90%;
+    }
+
+    .grid-img1, .grid-img4 {
+      align-items: end;
+    }
+    .grid-img2, .grid-img3 {
+      align-items: start;
     }
 
     .grid-img1{
@@ -787,7 +794,6 @@ input[type="checkbox"]:checked+label+p {
 
     .grid-img4 img{
       margin-top: 0;
-      
     }
 
     .grid-img1 img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
@@ -798,6 +804,18 @@ input[type="checkbox"]:checked+label+p {
       display: none;
     }
 
+    .omashihara-section1 *, .grid-historie *, .grid-aand * {
+      align-items: unset;
+      width: 90%;
+    }
+    .omashihara-section1, .grid-historie {
+      align-items: start;
+    }
+
+
+    .grid-aand {
+      align-items: end;
+    }
   }
 
 
