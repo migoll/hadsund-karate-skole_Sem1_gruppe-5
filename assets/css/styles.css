@@ -462,6 +462,14 @@ display: flex;
     display: none;
       }
 
+      .Indmeldelse-billede1 img:last-of-type,.grid-img2 img:last-of-type,.grid-img3 img:last-of-type,  .grid-img4 img:last-of-type{
+        display:block;
+      }
+  
+      .Indmeldelse-billede1 img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
+        display: none;
+      }
+
 }
 
 
