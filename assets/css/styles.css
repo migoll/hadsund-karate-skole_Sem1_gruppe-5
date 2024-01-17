@@ -505,6 +505,12 @@ display: flex;
       .Indmeldelse-billede2 img:first-of-type, .grid-img2 img:first-of-type,  .grid-img3 img:first-of-type, .grid-img4 img:first-of-type{
         display: none;
       }
+.karate-gi, .vi-anbefaler {
+  align-items: start;
+}
+.karate-gi *, .vi-anbefaler * {
+  width: 90%;
+}
 
 }
 
@@ -646,12 +652,21 @@ input[type="checkbox"]:checked+label+p {
 
   .instruktoer-alle section {
     width: 80%;
-    margin: 0 auto;
   }
 
   .instruktoer-alle p {
     width: 100%;
   }
+
+  .instruktoer1, .instruktoer3, .instruktoer5 {
+    display: flex;
+    justify-self: start;
+  }
+  .instruktoer2, .instruktoer4, .instruktoer6 {
+    display: flex;
+    justify-self: end;
+  }
+
 
   @media screen and (min-width:1024px) {
     .instruktoer-alle {
@@ -659,6 +674,18 @@ input[type="checkbox"]:checked+label+p {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .instruktoer1, .instruktoer4 {
+      display: flex;
+      justify-self: start;
+    }
+    .instruktoer2, .instruktoer5 {
+      display: flex;
+      justify-self: center;
+    }
+    .instruktoer3, .instruktoer6 {
+      display: flex;
+      justify-self: end;
+    }
   }
 
   .instruktoer1-text, .instruktoer2-text, .instruktoer3-text, .instruktoer4-text, .instruktoer5-text, .instruktoer6-text {
@@ -726,7 +753,7 @@ input[type="checkbox"]:checked+label+p {
     border-radius: 10px;
     box-shadow: 3px 3px lightgrey;
     padding: 1rem;
-    margin: 1rem;
+    margin: 0 1rem ;
     background-color: white;
 
   }
