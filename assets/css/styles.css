@@ -299,7 +299,7 @@ footer section {
 #menu {
   position: absolute;
   width: 200px;
-  margin: -100px 0 0 200px;
+  margin: -100px 0 0 -50px;
   padding: 25px;
   padding-top: 125px;
   background: var(--blue);
