@@ -1068,11 +1068,14 @@ input[type="checkbox"]:checked+label+p {
     flex-direction: row;
     max-width: 80%;
     margin: 0 auto;
-    align-items: flex-start;
+    justify-content: space-between;
   }
 
   .social-engagement p, .social-engagement h2, .cheftraener p, .cheftraener h2 {
     width: 90%;
   }
   
+  /* .cheftraenerImg, .socialEngagementImg {
+    align-items: flex-end;
+  } */
 }
