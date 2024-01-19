@@ -105,8 +105,6 @@ header {
   background-color: #23377F;
 }
 
-
-
 .budskab {
   justify-content: center;
 }
@@ -278,7 +276,7 @@ https://css-tricks.com/inclusively-hidden/
 .ul-seperator {
   display: block;
   height: 2px;
-  background: white;
+  background-color: rgba(85,128,188, 0.3);
 }
 
 
