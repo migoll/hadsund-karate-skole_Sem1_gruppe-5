@@ -105,6 +105,10 @@ header {
   background-color: #23377F;
 }
 
+.budskab {
+  justify-content: center;
+}
+
 /*Header media queries*/
 
 @media screen and (min-width:1024px) {
@@ -128,12 +132,12 @@ header {
 
 .icons {
   display: flex;
+  cursor: pointer;
+  gap:20px;
 }
 
-.header-user-icon,
-.header-burger-menu {
-  margin-left: 20px;
-  width: 17px;
+.header-user-icon {
+  width: 20px;
 }
 
 /*Hero Front Page*/
@@ -144,12 +148,20 @@ header {
   color: var(--black);
 }
 
-.front-page-hero h1 {
+.front-page-hero h1{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
+}
+.front-page-hero h2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  color: var(--black);
 }
 
 .front-page-hero img {
@@ -190,7 +202,7 @@ footer section {
 .hero {
   position: relative;
   text-align: center;
-  color: black;
+  color: var(--black);
   padding: 0;
 }
 
@@ -206,6 +218,118 @@ footer section {
   width: 100%;
   margin: 0;
 }
+
+/* Hero burger */
+/* inspiration fra: 
+https://codepen.io/erikterwan/pen/EVzeRP 
+https://css-tricks.com/inclusively-hidden/
+*/
+
+@media screen and (min-width:1024px) {
+  #burger {
+    display: none;
+  }
+}
+
+#burger input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+#burger label {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#burger ul {
+  color: white;
+  list-style: none;
+  padding: 40px 0 0;
+}
+
+#burger li{
+  padding-bottom: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+#burger li a{
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+#burger ul:nth-of-type(2) {
+  padding: 0;
+}
+
+.ul-seperator {
+  display: block;
+  height: 2px;
+  background-color: rgba(85,128,188, 0.3);
+}
+
+
+#burger div {
+  width: 100vw;
+  height: 0vh;
+  position: fixed;
+  top:0;
+  right:0;
+  background-color: var(--blue);
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+#burger input:checked ~ div {
+  height: 100vh;
+}
+
+#burger label span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.5s ease; 
+}
+
+#burger label span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#burger label span:last-child {
+  transform-origin: 0% 100%;
+}
+
+#burger input:checked ~ label span:first-child {
+  transform: rotate(45deg);
+}
+
+#burger input:checked ~ label span:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#burger input:checked ~ label span:last-child {
+  transform: rotate(-45deg);
+}
+/* Hero burger slut */
 
 /* intro-tekst */
 
@@ -419,6 +543,8 @@ section img {
 @media screen and (min-width:1024px) {
   .entry-points {
     flex-direction: row;
+    justify-content: space-between;
+    max-width: 80%;
   }
 }
 
@@ -558,38 +684,6 @@ button img {
 .kontakt-oplysninger li,
 .bestyrelse li {
   margin-bottom: 10px;
-}
-
-/* praktisk information accordion */
-
-input[type="checkbox"] {
-  display: none;
-}
-
-label {
-  display: block;
-  background-color: var(--blue);
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 80%;
-  border-radius: 8px 8px 0 0;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.vedtaegter-accordion p {
-  display: none;
-  padding: 10px 20px;
-  margin: 0;
-  border: 2px solid var(--blue);
-  background-color: white;
-  font-weight: bold;
-  border-radius: 0 0 8px 8px;
-}
-
-input[type="checkbox"]:checked+label+p {
-  display: block;
 }
 
 /* praktisk information media queries*/
@@ -921,9 +1015,8 @@ input[type="checkbox"]:checked+label+p {
       display: grid;
       grid-template-columns: 1fr 1fr;
       width: 80%;
-      margin-inline: 10%;
-      justify-items: center;
-      align-items: start;
+      margin: 0 auto;
+      max-width: 603.2px;
     }
 
     .borntraeningstider {
@@ -934,6 +1027,7 @@ input[type="checkbox"]:checked+label+p {
     .voksentraeningstider {
       grid-column: 2/3;
       max-width: 300px;
+      justify-self: end;
     }
 
     .traening-grid {

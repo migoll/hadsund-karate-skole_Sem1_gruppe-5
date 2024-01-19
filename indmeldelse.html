@@ -48,17 +48,52 @@
                 </li>
               </ul>
             </nav>
+            
             <img
               class="header-user-icon"
               src="./assets/images/user-solid.svg"
               alt="user icon"
             />
 
-            <img
-              class="header-burger-menu"
-              src="./assets/images/bars-solid.svg"
-              alt="burger menu"
-            />
+            <div id="burger">
+              <input id="burger-toggle" type="checkbox" />
+
+              <label for="burger-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+
+              <div>
+                <ul>
+                  <li>
+                    <a href="om-klubben.html">Om klubben</a>
+                  </li>
+                  <li>
+                    <a href="indmeldelse.html">Indmeldelse</a>
+                  </li>
+                  <li>
+                    <a href="traening.html">Træning</a>
+                  </li>
+                  <li>
+                    <a href="nyheder.html">Nyheder.html</a>
+                  </li>
+                  <li>
+                    <a href="instrukroere.html">Instruktører</a>
+                  </li>
+                  <li>
+                    <a href="praktisk-information.html">Praktisk information</a>
+                  </li>
+                </ul>
+                <div class="section-line"></div>
+                <ul class="burger-second-ul">
+                  <li><span class="ul-seperator"></span></li>
+                  <li>
+                    <a href="vedtaegter.html">Vedtægter</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -100,7 +135,7 @@
         </p>
         <div class="buttons">
           <button
-            onclick="window.location.href='https:/www.conventus.dk/dataudv/www/new_tilmelding.php?foreningsid=5748&gruppe=192903&skjul_nyt_medlem=0&skjul_allerede_medlem=0'"
+            onclick="window.location.href='https:/www.conventus.dk/dataudv/www/new_tilmelding.php?foreningsid=5748&gruppe=353978&skjul_nyt_medlem=0&skjul_allerede_medlem=0'"
           >
             Tilmeld barn
           </button>
@@ -220,8 +255,8 @@
       </div>
 
       <section class="entry-points">
-        <a href="./om-klubben.html">
-          <div class="entry-point-om-klubben">
+        <div class="entry-point-om-klubben">
+          <a href="./om-klubben.html">
             <img
               class="ep-om-klubben-mobile"
               src="./assets/images/mobil-img/entrypointKlubbenMobile.png"
@@ -234,12 +269,12 @@
               hidden
             />
             <h1>Om klubben</h1>
-          </div>
-        </a>
+          </a>
+        </div>
         <!-- Link: https://www.colourbox.dk/billede/karate-kamp-punch-billede-9346390 -->
 
-        <a href="./traening.html">
-          <div class="entry-point-traening">
+        <div class="entry-point-traening">
+          <a href="./traening.html">
             <img
               class="ep-traening-mobile"
               src="./assets/images/mobil-img/entrypointTræningMobile.png"
@@ -252,12 +287,12 @@
               hidden
             />
             <h1>Træning</h1>
-          </div>
-        </a>
+          </a>
+        </div>
         <!-- Link: https://www.colourbox.dk/billede/karate-karateka-martial-billede-38998247 -->
 
-        <a href="./nyheder.html">
-          <div class="entry-point-nyheder">
+        <div class="entry-point-nyheder">
+          <a href="./nyheder.html">
             <img
               class="ep-nyheder-mobile"
               src="./assets/images/mobil-img/entrypointNyhederMobile.png"
@@ -270,8 +305,8 @@
               hidden
             />
             <h1>Nyheder</h1>
-          </div>
-        </a>
+          </a>
+        </div>
         <!-- Link: https://www.colourbox.dk/billede/karate-kamp-motionerer-billede-9346320 -->
       </section>
     </main>
@@ -285,8 +320,13 @@
         ashiharakaratehadsund@gmail.com
       </section>
       <section class="footer-icons">
-        <img src="./assets/images/facebook.svg" alt="footer facebook icon" />
-        <img src="./assets/images/instagram.svg" alt="footer instagram icon" />
+        <a
+          href="https://www.facebook.com/pages/Hadsund-Karate-Skole/755453411214747"
+          ><img src="./assets/images/facebook.svg" alt="footer facebook icon"
+        /></a>
+        <a href="https://www.instagram.com/hadsund_ashihara/"
+          ><img src="./assets/images/instagram.svg" alt="footer instagram icon"
+        /></a>
       </section>
     </footer>
   </body>
