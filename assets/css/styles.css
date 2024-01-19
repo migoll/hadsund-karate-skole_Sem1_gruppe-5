@@ -843,8 +843,8 @@ button img {
     }
 
     .grid-img1 img, .grid-img2 img, .grid-img3 img, .grid-img4 img{
-      max-height: 500px;
-      width: auto;
+      
+      max-width: 90%;
     }
 
     .grid-img1, .grid-img4 {
